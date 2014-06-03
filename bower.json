@@ -1,0 +1,15 @@
+{
+  "name": "coding-dojo-modernizr",
+  "private": false,
+  "dependencies": {
+      "modernizr": "latest",
+      "json3": "latest",
+      "es5-shim": "latest",
+      "respond": "latest",
+      "bootstrap": "latest",
+      "animate.css": "latest"
+  },
+  "devDependencies": {
+
+  }
+}
