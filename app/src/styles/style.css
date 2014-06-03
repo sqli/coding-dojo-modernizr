@@ -1,0 +1,10 @@
+/* Simulated box shadow using borders: */
+.no-boxshadow div.box {
+   border-bottom: 1px solid #666;
+   border-right: 1px solid #777;
+}
+.boxshadow div.box {
+   -webkit-box-shadow: #666 1px 1px 1px;
+      -moz-box-shadow: #666 1px 1px 1px;
+           box-shadow: #666 1px 1px 1px;
+}

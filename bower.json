@@ -3,9 +3,12 @@
   "private": false,
   "dependencies": {
       "modernizr": "latest",
+      "yepnope": "latest",
       "json3": "latest",
       "es5-shim": "latest",
       "respond": "latest",
+      "sockjs-client": "latest",
+      "jquery": "1.9.0",
       "bootstrap": "latest",
       "animate.css": "latest"
   },
