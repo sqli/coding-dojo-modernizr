@@ -2,16 +2,10 @@
 
 $(document).ready(function () {
 
-    var states = {
-        MAIN: {
-            selector: '.container',
-            name: 'main'
-        }
-    };
+    $('.container').load('src/views/main.html', null, function(){
 
-    var loadState = function(state){
-        $(state.selector).load('src/views/' + state.name + '.html');
-    };
-
-    loadState(states.MAIN);
+    	animation.bounceInLeft($(this));
+    	
+    });
+    
 });
