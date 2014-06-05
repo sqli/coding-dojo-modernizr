@@ -1,0 +1,71 @@
+/* Simulated box shadow using borders: */
+div.box {
+    position: relative;
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+    background: #ffffff;
+    margin: 10px 0px 10px 0px;
+}
+div.box button.close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+div.box:before, div.box:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+div.box:after {
+    right: 10px;
+    left: auto;
+}
+
+/** New browsers */
+.boxshadow div.box {
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.boxshadow div.box:before, .boxshadow div.box:after {
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+       -moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+.borderradius div.box:before, .borderradius div.box:after {
+    -moz-border-radius: 100px / 10px;
+         border-radius: 100px / 10px;
+}
+.csstransforms div.box:after {
+    -webkit-transform: skew(8deg) rotate(3deg);
+       -moz-transform: skew(8deg) rotate(3deg);
+        -ms-transform: skew(8deg) rotate(3deg);
+         -o-transform: skew(8deg) rotate(3deg);
+            transform: skew(8deg) rotate(3deg);
+}
+
+/** Old browsers */
+.no-boxshadow div.box {
+    border-top: 1px solid #d6d6d6;
+    border-right: 1px solid #bbbbbb;
+    border-bottom: 2px solid #bbbbbb;
+    border-left: 1px solid #d6d6d6;
+    background-image: url('../img/shadow.png');
+    background-repeat: repeat-y;
+}
+.no-boxshadow div.box:before, .no-boxshadow div.box:after {
+
+}
+.no-borderradius div.box:before, .no-borderradius div.box:after {
+
+}
+.no-csstransforms div.box:after {
+
+}

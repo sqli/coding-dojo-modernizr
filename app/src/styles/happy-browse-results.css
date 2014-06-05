@@ -1,6 +1,6 @@
 /* Message for old browsers: */
 div#happy-browse{
-	display: none;
+    display: none;
 }
 html.no-boxshadow div#happy-browse,
 html.no-websockets div#happy-browse,
@@ -18,22 +18,9 @@ html.no-audio div#happy-browse,
 html.no-localstorage div#happy-browse,
 html.no-sessionstorage div#happy-browse,
 html.no-webworkers div#happy-browse{
-	display: inline;
-	position: absolute;
-	top: 0px;
-	left: 20%;
-	width: 60%;
-}
-/* Simulated box shadow using borders: */
-div.box {
-   height: 100px;
-}
-.no-boxshadow div.box {
-   border-bottom: 1px solid #666;
-   border-right: 1px solid #777;
-}
-.boxshadow div.box {
-   -webkit-box-shadow: #666 1px 1px 1px;
-      -moz-box-shadow: #666 1px 1px 1px;
-           box-shadow: #666 1px 1px 1px;
+    display: inline;
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    width: 60%;
 }

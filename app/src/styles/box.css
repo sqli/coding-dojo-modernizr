@@ -1,0 +1,29 @@
+/* Simulated box shadow using borders: */
+div.box {
+    position: relative;
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+    background: #ffffff;
+    margin: 10px 0px 10px 0px;
+}
+div.box button.close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+div.box:before, div.box:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+div.box:after {
+    right: 10px;
+    left: auto;
+}
