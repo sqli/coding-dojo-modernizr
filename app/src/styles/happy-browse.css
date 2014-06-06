@@ -1,5 +1,23 @@
 /* Message for old browsers: */
 div#happy-browse{
+    display: none;
+}
+html.no-boxshadow div#happy-browse,
+html.no-websockets div#happy-browse,
+html.no-canvas div#happy-browse,
+html.no-geolocation div#happy-browse,
+html.no-borderradius div#happy-browse,
+html.no-textshadow div#happy-browse,
+html.no-opacity div#happy-browse,
+html.no-cssgradients div#happy-browse,
+html.no-cssanimations div#happy-browse,
+html.no-fontface div#happy-browse,
+html.no-svg div#happy-browse,
+html.no-video div#happy-browse,
+html.no-audio div#happy-browse,
+html.no-localstorage div#happy-browse,
+html.no-sessionstorage div#happy-browse,
+html.no-webworkers div#happy-browse{
     display: inline;
     position: absolute;
     top: 0px;

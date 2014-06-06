@@ -38,7 +38,7 @@ var animation = {
                 $element.remove();
             });
         }
-        
+
     }
 
 };
