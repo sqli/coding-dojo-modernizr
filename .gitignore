@@ -20,7 +20,7 @@ target/
 
 # Gulp Bower Node
 node_modules
-dist
+#dist
 .tmp
 .sass-cache
 #app/bower_components
