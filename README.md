@@ -27,3 +27,7 @@ How to do a cross brower web site.
 -	npm install
 -	bower install
 -	gulp serve
+
+## Demo :
+
+-   [link](http://sqli.github.io/coding-dojo-modernizr/app/)
